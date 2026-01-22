@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs do html</title>
+</head>
+<body>
+    <h1>Alguns Inputs mais usados no html</h1>
+    <form action="">
+        <label for="nome">Nome:</label> <!-- Input do tipo texto-->
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required autofocus>
+        <br><br>
+        <label for="email">Email:</label><!-- Input do tipo email-->
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        <br><br>
+        <label for="senha">Senha:</label><!-- Input do tipo senha-->
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+        <br><br>
+        <label for="idade">Idade:</label><!-- Input do tipo numero-->
+        <input type="number" name="idade" id="idade" placeholder="Digite sua idade" required>
+        <br><br>
+        <label for="data">Data de Nascimento:</label> <!-- Input do tipo data, existe data e hora e etc-->
+        <input type="date" name="data" id="data" required>
+        <br><br>
+        <label for="cor">Cor Favorita:</label> <!-- Input do tipo cor-->
+        <input type="color" name="cor" id="cor">
+        <br><br>
+        <label for="arquivo">Envie um arquivo:</label><!-- Input do tipo arquivo para envio de arquivo-->
+        <input type="file" name="arquivo" id="arquivo">
+        <br><br>
+        <!-- Campo de seleção usando inputs de radio -->
+        <label>Gênero:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">  <!-- Note que o name é o mesmo para ambos, assim só pode selecionar um e eles ficam agrupados-->
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>    
+        <br><br>
+        <!-- Campo de seleção múltipla usando inputs de checkbox -->
+        <label>Interesses:</label>
+        <input type="checkbox" id="backend" name="interesses" value="backend"><!-- Note que o name é o mesmo para todos, assim pode selecionar mais de um e eles ficam agrupados-->
+        <label for="backend">Back-end</label>
+        <input type="checkbox" id="frontend" name="interesses" value="frontend">
+        <label for="frontend">Front-end</label>
+        <input type="checkbox" id="mobile" name="interesses" value="mobile">
+        <label for="mobile">Mobile</label>
+        <br><br>
+<!-- Campo de seleção usando select -->
+        <label for="pais">País:</label> <!-- Note que o name é o mesmo para todos, assim só pode selecionar um e eles ficam agrupados-->
+        <select name="pais" id="pais" required>
+            <option value="" selected disabled >Selecione seu país</option><!-- Option vazio para forçar o usuário a selecionar uma opção--> <!-- Selected para deixar essa opção selecionada por padrão e disabled para não permitir que o usuário selecione essa opção-->
+            <option value="brasil">Brasil</option><!-- Value é o valor que será enviado no formulário-->
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="uruguai">Uruguai</option>
+            <option value="paraguai">Paraguai</option>
+        </select>
+        <br><br>
+<!-- Campo de seleção múltipla usando select com multiple -->
+        <label for="linguagens">Linguagens de Programação:</label> <!-- Note que o name é o mesmo para todos, assim pode selecionar mais de um e eles ficam agrupados-->
+        <select name="linguagens" id="linguagens" multiple size="5"><!-- Multiple para permitir seleção múltipla e size para definir o tamanho da caixa de seleção-->
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="ruby">Ruby</option>
+            <option value="php">PHP</option>
+            <option value="go">Go</option>
+            <option value="rust">Rust</option>
+        </select>
+        <br><br>
+        <!-- Textarea para texto maior -->
+        <label for="mensagem">Mensagem:</label>  <!-- Textarea para texto maior-->
+        <br><br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea><!-- Cols para definir a largura e rows para definir a altura--> <!--Nunca dar espaço na tag do textarea-->
+        <br><br>
+        <button type="submit">Enviar</button>
+
+    
+</body>
+</html>

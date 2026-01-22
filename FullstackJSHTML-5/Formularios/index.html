@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario html</title>
+</head>
+
+<body>
+    <h1> Criando formularios com html</h1>
+<!-- o action define para onde os dados serao enviados -->
+<!-- o method define o metodo de envio dos dados get para obter, post para enviar-->
+<!-- o target define onde a pagina sera aberta -->
+<!-- _blank abre em uma nova aba -->
+<!-- _self abre na mesma aba -->
+<!-- placeholder é o dizer que fica no fundo do campo -->
+<!-- autofocus faz com que o campo ja fique selecionado ao carregar a pagina -->
+<!-- required faz com que o campo seja obrigatorio -->
+ <!-- o label define o nome do campo -->
+  <!-- o for do label deve ser igual ao id do input -->
+
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="Pesquisar">Pesquise No Google</label>
+        <input type="text" name="q" placeholder="Digite aqui!" autofocus required id="Pesquisar">
+        <button type="submit">Pesquisar</button>        
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscrição completo</title>
+</head>
+<body>
+    <header>
+        <h1> Formulário de Inscrição</h1>
+    </header>
+    <br>
+    <main>
+        <form action="#" method="post">
+
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="date">Data de Nascimento:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" min="0" max="120"><br><br>
+
+            <label for="genero">Gênero:</label><br>
+            
+            <input type="radio" id="masculino" name="genero" value="masculino" required>            
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" id="feminino" name="genero" value   ="feminino">
+            <label for="feminino">Feminino</label>
+            <br><br>
+            
+
+            <label>Areas de Interesses:</label><br>
+
+            <input type="checkbox" id="FrontEnd" name="interesses" value="FrontEnd">
+            <label for="FrontEnd">FrontEnd</label><br>
+
+            <input type="checkbox" id="BackEnd" name="interesses" value="BackEnd">
+            <label for="BackEnd">BackEnd</label><br>
+
+            <input type="checkbox" id="QA" name="interesses" value="QA">
+            <label for="QA">Música</label><br>
+
+            <input type="checkbox" id="DevOps" name="interesses" value="DevOps">
+            <label for="DevOps">DevOps</label><br><br>
+
+
+            <h3> Uma Biografia</h3>
+            <label for="bio">Biografia:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Comece aqui a sua Biografia..."></textarea><br><br>
+
+            <label for="arquivo">Anexar Curriculo Aqui:</label><br>
+            <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx"><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+</body>
+</html>

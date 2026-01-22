@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <!-- Formulário com diversos tipos de inputs -->
+<form action="#" method="post">
+    <div>
+
+            <label for="nome">Nome:</label> <br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required autofocus>
+    </div>
+          <br>
+    <div>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+    </div>
+          <br>
+    <div>
+            <label for="whatsapp">WhatsApp:</label><br>
+            <input type="tel" name="whatsapp" id="whatsapp" placeholder="Digite seu WhatsApp" required>
+    </div>
+          <br>
+    <div>
+            <label>Área de atuação:</label><br>
+
+            <input type="radio" id="desenvolvimento" name="area_atuacao" value="desenvolvimento" required>
+            <label for="desenvolvimento">Desenvolvimento</label>
+
+            <input type="radio" id="qa" name="area_atuacao" value="qa">
+            <label for="qa">Quality Assurance (QA)</label>
+
+            <input type="radio" id="analise_dados" name="area_atuacao" value="analise_dados">
+            <label for="analise_dados">Análise de Dados</label>
+
+            <input type="radio" id="infraestrutura" name="area_atuacao" value="infraestrutura">
+            <label for="infraestrutura">Infraestrutura</label>
+
+    </div>
+            <br>
+    <div>
+            <label for="observacoes">Observações:</label><br>
+            <textarea name="observacoes" id="observacoes" rows="4" cols="50" placeholder="Digite suas observações aqui..."></textarea>
+    </div>
+            <br>
+    <div>
+            <input type="checkbox" id="novidades_email" name="novidades_email">
+            <label for="novidades_email">Desejo receber novidades e ofertas por email.</label>
+    </div>
+        <br>
+            <button type="submit">Enviar</button> <!-- Pode ser fazer um input de submit que funcionaria como um botão, Exemplo: <input type= "submit" value="Enviar"> Aqui o Value é o nome do Botão que será apresentado.-->
+</form>   
+</body>
+</html>
