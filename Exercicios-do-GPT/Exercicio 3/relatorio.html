@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Relatório de Vendas</title>
+</head>
+<body>
+  <h1>Relatório de Vendas - 2025</h1>
+
+  <table border="1" cellpadding="6" cellspacing="0">
+    <caption>Vendas por Produto e Região (Valores em unidades)</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Produto</th>
+        <th scope="col" colspan="2">Vendas por Região</th>
+        <th scope="col">Total</th>
+      </tr>
+      <tr>
+        <th scope="col"></th> <!-- célula vazia porque "Produto" já está na linha acima -->
+        <th scope="col">Região Norte</th>
+        <th scope="col">Região Sul</th>
+        <th scope="col"></th> <!-- célula vazia correspondente ao Total -->
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <!-- exemplo de th como cabeçalho de linha -->
+        <th scope="row">Notebook</th>
+        <td>120</td>
+        <td>80</td>
+        <td>200</td>
+      </tr>
+
+      <!-- exemplo de uso de rowspan: o produto "Smartphone Pro" agrupa duas linhas -->
+      <tr>
+        <th scope="row" rowspan="2">Smartphone Pro</th>
+        <td>200</td>
+        <td>150</td>
+        <td>350</td>
+      </tr>
+      <tr>
+        <!-- célula do produto omitida por causa do rowspan -->
+        <td>220</td>
+        <td>180</td>
+        <td>400</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Acessórios</th>
+        <td>300</td>
+        <td>280</td>
+        <td>580</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th scope="row">Total Geral</th>
+        <!-- somatórios fictícios (soma das colunas acima) -->
+        <td>840</td>
+        <td>690</td>
+        <td>1530</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

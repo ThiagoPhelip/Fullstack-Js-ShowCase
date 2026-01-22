@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatorio de Vendas</title>
+</head>
+
+<body>
+    <header>
+        <h1> Tabela de agrupamento e sumario</h1>
+        <p>Objetivo: Construir uma tabela complexa com cabeçalho múltiplo, rodapé e agrupamentos (rowspan/colspan).</p>
+    </header>
+
+    <main>
+<table border="1" cellpadding="6" cellspacing="0">
+    <caption>Vendas por Produto e Região (Valores em unidades)</caption> <!-- Titulo da tabela --> 
+    <thead>        
+        <tr>
+            <th scope="col">Produto</th> <!-- Cabeçalho da tabela -->
+            <th scope="col" colspan=" 2">Vendas Por Região</th><!-- Agrupamento de colunas --> <!-- colspan = quantas colunas ele vai abranger -->
+            <th scope="col">Total</th><!-- Coluna de total geral -->
+        </tr>
+        <tr>
+            <th scope="col">Alimentos</th>
+            <th scope="col">Região Sul </th>
+            <th scope="col">Região Norte</th>
+            <th scope="col">1 TN</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Arroz</th> <!-- Esse estilo faz com que a palavra ganhe uma formatação --> <!-- scope=row = abrange a linha toda e só pode ser usado com -->
+            <td>500</td>
+            <td>300</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <th scope="row">Feijão</td>
+            <td>400</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <th scope="row">Macarrão</th>
+            <td>300</td>
+            <td>400</td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <th scope="row">Farinha</td>
+            <td>150</td>
+            <td>180</td>
+            <td>600</td>
+        <tr>
+            <th scope="row">Total Geral</th>
+            <th>1200</th>
+            <th>900</th>
+            <th>2100</th>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="4">Relatório de Vendas - 2024</td>
+        </tr>
+</table>
+    </main>
+
+
+</body>
+</html>

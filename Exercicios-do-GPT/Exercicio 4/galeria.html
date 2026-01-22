@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galeria Acessível</title>
+</head>
+<body>
+  <header>
+    <h1>Galeria de Fotos</h1>
+    <p>Galeria de exemplo com &lt;figure&gt;, &lt;figcaption&gt; e mapa de imagem.</p>
+  </header>
+
+  <main>
+    <!-- Figura 1 -->
+    <figure>
+      <img src="imagens/foto1.jpg" alt="Praia ao pôr do sol com coqueiros" width="400" height="250">
+      <figcaption>Pôr do sol na praia — perfeito para relaxar.</figcaption>
+      <p><a href="imagens/foto1.jpg" download>Baixar esta imagem</a></p>
+    </figure>
+
+    <!-- Figura 2 (com image map) -->
+    <figure>
+      <!-- usemap referencia #mapa-exemplo -->
+      <img src="imagens/foto-mapa.jpg" alt="Planta baixa com áreas destacadas" usemap="#mapa-exemplo" width="600" height="350">
+      <figcaption>Planta interativa — clique nas áreas para ver detalhes.</figcaption>
+
+      <!-- mapa com duas áreas que apontam para âncoras internas -->
+      <map name="mapa-exemplo" id="mapa-exemplo">
+        <!-- circle: cx,cy,r -->
+        <area shape="circle" coords="120,110,60" href="#detalhe1" alt="Detalhe 1: Sala principal">
+        <!-- rect: x1,y1,x2,y2 -->
+        <area shape="rect" coords="300,60,520,220" href="#detalhe2" alt="Detalhe 2: Cozinha e área de serviço">
+      </map>
+    </figure>
+
+    <!-- Figura 3 -->
+    <figure>
+      <img src="imagens/foto3.jpg" alt="Retrato de pessoa sorrindo em fundo neutro" width="300" height="400">
+      <figcaption>Retrato — expressão natural em fotografia de estúdio.</figcaption>
+    </figure>
+
+    <!-- Seções detalhadas para as âncoras -->
+    <section id="detalhe1" tabindex="-1">
+      <h2>Detalhe 1 — Sala Principal</h2>
+      <p>
+        Aqui descrevemos a sala principal: dimensões, móveis e pontos de destaque.
+        A área circular do mapa leva o usuário a esta seção.
+      </p>
+    </section>
+
+    <section id="detalhe2" tabindex="-1">
+      <h2>Detalhe 2 — Cozinha</h2>
+      <p>
+        Informações sobre a cozinha: eletrodomésticos, bancada e área de serviço.
+        A área retangular do mapa leva o usuário a esta seção.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Galeria exemplo © 2025</p>
+  </footer>
+</body>
+</html>

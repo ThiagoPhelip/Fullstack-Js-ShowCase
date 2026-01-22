@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registro</title>
+</head>
+<body>\
+  <h1>Formulário de Registro</h1>
+
+  <form method="post" action="#">
+    <!-- Dados pessoais -->
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+
+      <label for="nome">Nome completo:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="telefone">Telefone (formato: (xx)xxxxx-xxxx):</label><br>
+      <input
+        type="tel"
+        id="telefone"
+        name="telefone"
+        pattern="\(\d{2}\)\d{5}-\d{4}"
+        title="Formato: (41)99999-9999"
+        placeholder="(41)99999-9999"
+        required
+      ><br><br>
+
+      <label for="nascimento">Data de Nascimento:</label><br>
+      <input type="date" id="nascimento" name="nascimento" required><br><br>
+    </fieldset>
+
+    <!-- Acesso -->
+    <fieldset>
+      <legend>Acesso</legend>
+
+      <label for="senha">Senha (mínimo 8 caracteres):</label><br>
+      <input type="password" id="senha" name="senha" minlength="8" required><br><br>
+
+      <label for="confirmacao">Confirme a senha:</label><br>
+      <input type="password" id="confirmacao" name="confirmacao" minlength="8" required><br><br>
+    </fieldset>
+
+    <!-- Localização / Preferências -->
+    <fieldset>
+      <legend>Localização</legend>
+
+      <label for="pais">País:</label><br>
+      <select id="pais" name="pais" required>
+        <option value="" disabled selected>Selecione...</option>
+        <option value="brasil">Brasil</option>
+        <option value="portugal">Portugal</option>
+        <option value="outro">Outro</option>
+      </select><br><br>
+    </fieldset>
+
+    <!-- Documentos -->
+    <fieldset>
+      <legend>Documentos</legend>
+
+      <label for="curriculo">Anexe seu currículo (PDF):</label><br>
+      <input type="file" id="curriculo" name="curriculo" accept=".pdf"><br><br>
+    </fieldset>
+
+    <!-- Termos -->
+    <fieldset>
+      <legend>Termos</legend>
+
+      <input type="checkbox" id="termos" name="termos" required>
+      <label for="termos">Li e aceito os termos e condições</label><br><br>
+    </fieldset>
+
+    <button type="reset">Limpar</button>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
