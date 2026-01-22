@@ -1,0 +1,62 @@
+body {
+  background-image: url("Rio.jpg");
+  background-size: cover;   /* ajusta para ocupar a tela toda */
+  background-repeat: no-repeat; /* evita repetição */
+  /*background-position: center;  /* centraliza a imagem */
+
+}
+
+header {
+  border: 5px solid rgb(133, 110, 110); /* borda preta de 5px */
+  border-radius: 15px;     /* borda arredondada */
+  padding: 10px;           /* espaço interno */
+  text-align: center;      /* centraliza o texto */
+  background-color: rgba(255, 255, 255, 0.8); /* fundo branco com transparência */
+  h1 {
+    color: rgb(22, 196, 144); /* cor do texto */
+  }
+}
+main {
+  border: 5px solid rgb(133, 110, 110); /* borda preta de 5px */
+  border-radius: 15px;     /* borda arredondada */
+  padding: 10px;           /* espaço interno */
+  background-color: rgba(255, 255, 255, 0.8); /* fundo branco com transparência */
+  h2 {
+    color: rgb(15, 93, 238); /* cor do texto */
+        font-size: 40px; /* tamanho da fonte */
+      }
+      p {
+        color: rgb(199, 6, 6); /* cor do texto */
+        font-size: 30px; /* tamanho da fonte */
+      }
+    }
+    .box1 {
+      border: 5px solid rgb(12, 12, 12); /* borda preta de 5px */
+      border-radius: 15px;     /* borda arredondada */
+      padding: 10px;           /* espaço interno */
+      background-color: rgba(74, 201, 15, 0.8); /* fundo branco com transparência */
+      margin-bottom: 20px;     /* espaço entre as caixas */
+      color: rgb(240, 41, 15); /* cor do texto */
+      font-size: 25px; /* tamanho da fonte */
+    }
+    .box2 {
+      border: 5px solid rgb(208, 7, 235); /* borda preta de 5px */
+      height: 150px;
+      border-radius: 15px;     /* borda arredondada */
+      padding: 10px;           /* espaço interno */
+      background-color: rgba(97, 128, 196, 0.507); /* fundo branco com transparência */
+      margin-bottom: 20px;     /* espaço entre as caixas */
+      color: rgb(0, 0, 0); /* cor do texto */
+      font-size: 25px; /* tamanho da fonte */
+    }
+    .box3 {
+      border: 5px solid rgb(230, 211, 43); /* borda preta de 5px */
+      width: 1200px;
+      border-radius: 15px;     /* borda arredondada */
+      padding: 10px;           /* espaço interno */
+      background-color: rgba(31, 137, 207, 0.788); /* fundo branco com transparência */
+      margin-bottom: 20px;     /* espaço entre as caixas */
+      color: rgb(121, 3, 121); /* cor do texto */
+      font-size: 25px; /* tamanho da fonte */
+    }
+

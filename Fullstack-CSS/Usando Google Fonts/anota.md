@@ -1,0 +1,3 @@
+Acessando o google fonts
+https://fonts.google.com/?_gl=1*17k1ifk*_ga*MTMzNTYzODYxMy4xNzA2MDIxODE5*_ga_37GXT4VGQK*MTcyOTAwMjM5OC45NDQuMS4xNzI5MDA2NzU5LjAuMC4w*_fplc*VzJ0OUolMkZsMnZoaGN4QW5nb3RIWTk0cDlySSUyQnlESU4lMkZWZzJESmN4S0JKJTJGUDdaY3QxQ0U5Z2R1UDBjcnVta0dwMXZRdG16bnRsQm1oeTRlMXRlNVdUc0NmWWk2RGdmb1daMXduOHVIY2tVcSUyQkZKNjRpVmFVSmpnMElrclpwQSUzRCUzRA..
+basta escolher, copiar e colar no arquivo css.
